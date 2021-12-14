@@ -1,15 +1,15 @@
 import { Router } from 'express';
-import { helloGet } from '../endpoint/hello';
+import { PickaxeGet } from '../endpoint/pickaxeGet';
 
 const router = Router();
 
 /**
- * GET /hello
- * @tag hello
+ * GET /pickaxeGet
+ * @tag Picareta
  * @response 204
  * @response default
  * @responseContent {Error} default.application/json
  */
-router.get('/hello', helloGet);
+router.get('/pickaxeGet', PickaxeGet);
 
 export default router;
